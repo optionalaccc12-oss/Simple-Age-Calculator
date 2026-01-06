@@ -1,37 +1,20 @@
-'use strict';
+function DOB() {
+    const dobInput = document.getElementById('dob').value;
 
-var _buttons = {},
-    _result = {};
-
-function calculate() {
-    var _currentValue = this.innerHTML;
-
-    if (_currentValue == '=') {
-        try {
-            _result.value = eval(_result.value); 
-        } catch (e) {
-            _result.value = null;
-        }
+    
+    if (dobInput === "") {
+        alert("Please select your Date of Birth");
         return;
     }
 
-    _result.value += _currentValue;
+    // fixed current date (today)
+    const currentDate = new Date();
+
+    const dob = new Date(dobInput);
+
+    let age = currentDate.getFullYear() - dob.getFullYear();
+  const ageResult = document.getElementById("ageResult");
+    ageResult.style.display = "inline";  
+    ageResult.value = "Your age is " + age;
 }
 
-function initElement() {
-    _buttons = document.querySelectorAll('button');
-    _result = document.querySelector('#result');
-}
-
-function initEvent() {
-    for (var index = 0, length = _buttons.length; index < length; index++) {
-        _buttons[index].addEventListener('click', calculate);
-    }
-}
-
-function init() {
-    initElement();
-    initEvent();
-}
-
-window.addEventListener('DOMContentLoaded', init);

@@ -1,32 +1,68 @@
-#calculator {
-    margin: 0 auto;
-    width: 350px;
-    height: auto;
-    background-color: slategray;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
+/* ===== Body ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#screen {
-    padding: 10px 0px 10px 0px;
+/* ===== Card container ===== */
+.card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 320px;
 }
 
-#result {
-    padding: 10px;
-    width: 90%;
-    border: none;
-    border-radius: 3px;
-    text-align: right;
-    font-size: 50px;
-    letter-spacing: 7px;
+/* ===== Header ===== */
+.card header h1 {
+  font-size: 28px;
+  color: #1a73e8;
+  margin-bottom: 25px;
 }
 
+/* ===== Labels ===== */
+label {
+  font-weight: 500;
+  color: #555;
+}
+
+/* ===== Input fields ===== */
+input[type="date"], .card input[type="text"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#ageResult {
+  font-weight: bold;
+  color: #1a73e8;
+  display: none; /* hidden initially */
+}
+
+/* ===== Button ===== */
 button {
-    width: 70px;
-    height: 50px;
-    margin: 4px;
-    border-radius: 2px;
-    background-color: whitesmoke;
-    border: none;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
+
+button:hover {
+  background-color: #155bb5;
+}
+

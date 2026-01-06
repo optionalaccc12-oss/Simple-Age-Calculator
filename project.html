@@ -1,38 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>Simple JavaScript Calculator</title>
-    <link rel="stylesheet" href="project.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project - AGE calculator</title>
+<link rel="stylesheet" href="project.css">
+
 </head>
-
 <body>
-    <div id="calculator">
-        <div id="screen">
-            <input type="text" id="result"/>
-        </div>
-        <div id="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>+</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>/</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>*</button>
-        </div>
-    </div>
-    <script src="project.js"></script>
-</body>
+<div class="card"
+><header>
+    <H1>AGE-CALCULATOR</H1>
+</header>
+<div>
+<label>Enter your Date of Birth</label><br>
+<input type ='date' id="dob">
+<button onclick="DOB()">Calculate Age</button></div><br>
 
+<div>
+    <label>Current Date</label><br>
+    <input type="date" id="cd" value="2026-01-01">
+</div><br>
+<input type="text" id="ageResult" value="Your age is --" readonly style="display:none;">
+<script src="project.js"></script>  
+</div>
+</body>
 </html>
