@@ -6,8 +6,10 @@ function DOB() {
         alert("Please select your Date of Birth");
         return;
     }
-
-
+else if(dobInput>"2026-01-01"){
+      alert("Child is not born yet");
+      return;
+}
     const currentDate = new Date();
 
     const dob = new Date(dobInput);
