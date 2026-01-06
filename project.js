@@ -7,7 +7,7 @@ function DOB() {
         return;
     }
 
-    // fixed current date (today)
+
     const currentDate = new Date();
 
     const dob = new Date(dobInput);
