@@ -1,4 +1,4 @@
-/* ===== Body ===== */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f4f8;
@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-/* ===== Card container ===== */
+
 .card {
   background: #ffffff;
   padding: 30px 40px;
@@ -19,20 +19,19 @@ body {
   width: 320px;
 }
 
-/* ===== Header ===== */
 .card header h1 {
   font-size: 28px;
   color: #1a73e8;
   margin-bottom: 25px;
 }
 
-/* ===== Labels ===== */
+
 label {
   font-weight: 500;
   color: #555;
 }
 
-/* ===== Input fields ===== */
+
 input[type="date"], .card input[type="text"] {
   width: 100%;
   padding: 12px 10px;
@@ -46,10 +45,10 @@ input[type="date"], .card input[type="text"] {
 #ageResult {
   font-weight: bold;
   color: #1a73e8;
-  display: none; /* hidden initially */
+  display: none; 
 }
 
-/* ===== Button ===== */
+
 button {
   background-color: #1a73e8;
   color: #fff;
